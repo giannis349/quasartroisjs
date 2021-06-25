@@ -1,6 +1,8 @@
 .DS_Store
 .thumbs.db
 node_modules
+# Carpeta /etc para configuraciones o cosas offtopic
+etc
 
 # Quasar core related directories
 .quasar

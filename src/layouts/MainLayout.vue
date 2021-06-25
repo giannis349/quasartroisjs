@@ -1,7 +1,7 @@
 <template>
-  <q-layout view="hH Lpr lFf">
-    <q-header elevated>
-      <q-toolbar>
+  <q-layout view="lhr LpR lfr">
+    <q-header class="col-auto bg-red-5" style="left: unset;">
+      <q-toolbar class="col-auto bg-transparent">
         <q-btn
           flat
           dense
@@ -11,40 +11,35 @@
           @click="toggleLeftDrawer"
         />
 
-        <q-toolbar-title>
-          Campus Digital - UMSNH
-        </q-toolbar-title>
-
-        <!-- <div>Campus v{{ $q.version }}</div> -->
       </q-toolbar>
     </q-header>
 
     <q-drawer
-      v-model="leftDrawerOpen"
+      v-model="rightDrawerOpen"
       show-if-above
+
+      :mini="miniState"
+      @mouseover="miniState = false"
+      @mouseout="miniState = true"
+
+      :width="300"
+      :breakpoint="600"
+
+      side="right"
+      behavior="desktop"
       bordered
       class="bg-grey-1 row"
     >
-    <!-- <img
-      alt="UMSNH"
-      src=""
-      style="margin:0 auto; width: 80%; height: auto"
-      class="self-center"
-    > -->
-      <q-list>
-        <q-item-label
-          header
-          class="text-grey-8"
-        >
-          Essential Links
-        </q-item-label>
+      <q-scroll-area class="fit">
+        <q-list>
+          <EssentialLink
+            v-for="link in essentialLinks"
+            :key="link.title"
+            v-bind="link"
+          />
+        </q-list>
 
-        <EssentialLink
-          v-for="link in essentialLinks"
-          :key="link.title"
-          v-bind="link"
-        />
-      </q-list>
+      </q-scroll-area>
     </q-drawer>
 
     <q-page-container>
@@ -111,14 +106,15 @@ export default defineComponent({
   },
 
   setup () {
-    const leftDrawerOpen = ref(false)
+    const rightDrawerOpen = ref(false)
 
     return {
       essentialLinks: linksList,
-      leftDrawerOpen,
+      rightDrawerOpen,
       toggleLeftDrawer () {
-        leftDrawerOpen.value = !leftDrawerOpen.value
-      }
+        rightDrawerOpen.value = !rightDrawerOpen.value
+      },
+      miniState: ref(true)
     }
   }
 })

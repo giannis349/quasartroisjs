@@ -1,6 +1,8 @@
 <template>
   <q-item
     clickable
+    v-ripple
+
     tag="a"
     target="_blank"
     :href="link"
