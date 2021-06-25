@@ -1,4 +1,6 @@
 # QCampus Digital (qcampus)
+## Quasar 2. Frontend + Three Js (Troisjs??)
+_____
 
 Frontend de Campus Digital en Quasar v2 Vuejs v3
 
@@ -12,21 +14,6 @@ yarn
 quasar dev
 ```
 
-## Quasar 2. Frontend + Three Js (Troisjs??)
-
-
-______
-╔═╗┬  ┬    ╦ ╦┌─┐┬ ┬┬─┐  ╔╗ ┌─┐┌─┐┌─┐               
-╠═╣│  │    ╚╦╝│ ││ │├┬┘  ╠╩╗├─┤└─┐├┤                
-╩ ╩┴─┘┴─┘   ╩ └─┘└─┘┴└─  ╚═╝┴ ┴└─┘└─┘               
-┌─┐┬─┐┌─┐  ╔╗ ┌─┐┬  ┌─┐┌┐┌┌─┐                       
-├─┤├┬┘├┤   ╠╩╗├┤ │  │ │││││ ┬                       
-┴ ┴┴└─└─┘  ╚═╝└─┘┴─┘└─┘┘└┘└─┘                       
-╔╦╗┌─┐  ┬ ┬┌─┐  ┬                                   
- ║ │ │  │ │└─┐  │                                   
- ╩ └─┘  └─┘└─┘  o                                   
-
-______
 
 ### Build the app for production
 ```bash
