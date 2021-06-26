@@ -21,6 +21,7 @@
       </q-item-label>
     </q-item-section>
   </q-item>
+  <q-separator></q-separator>
 </template>
 
 <script>

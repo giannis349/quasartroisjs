@@ -1,7 +1,8 @@
 <template>
-  <q-layout view="lhr LpR lfr">
-    <q-header class="col-auto bg-red-5" style="left: unset;">
-      <q-toolbar class="col-auto bg-transparent">
+  <q-layout view="lHr LpR ffr">
+    <q-header class="col-auto bg-transparent" style="left: unset;">
+      <q-toolbar class="col-auto bg-blue-5">
+        <q-title >Campus Digital UMSNH</q-title>
         <q-btn
           flat
           dense
@@ -45,6 +46,20 @@
     <q-page-container>
       <router-view />
     </q-page-container>
+
+    <q-footer reveal class="bg-transparent text-white">
+      <q-toolbar>
+        <q-avatar>
+          <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg">
+        </q-avatar>
+        <q-text text-overline class="text-white q-px-sm">
+          <span>
+            Universidad Michoacana de San nicolas de Hidalgo
+          </span>
+        </q-text>
+      </q-toolbar>
+    </q-footer>
+
   </q-layout>
 </template>
 
@@ -53,46 +68,46 @@ import EssentialLink from 'components/EssentialLink.vue'
 
 const linksList = [
   {
-    title: 'Links de prueba',
+    title: 'Estudios',
     caption: 'quasar.dev',
     icon: 'school',
-    link: 'https://quasar.dev'
+    link: '#'
   },
   {
-    title: 'Links de prueba',
+    title: 'Infraestructura',
     caption: 'github.com/quasarframework',
     icon: 'code',
-    link: 'https://github.com/quasarframework'
+    link: '#'
   },
   {
-    title: 'Links de prueba',
+    title: 'Publicaciones',
     caption: 'chat.quasar.dev',
     icon: 'chat',
-    link: 'https://chat.quasar.dev'
+    link: '#'
   },
   {
-    title: 'Links de prueba',
+    title: 'Desarrollo',
     caption: 'forum.quasar.dev',
     icon: 'record_voice_over',
-    link: 'https://forum.quasar.dev'
+    link: '#'
   },
   {
-    title: 'Links de prueba',
+    title: 'Links de prueba 1 ',
     caption: '@quasarframework',
     icon: 'rss_feed',
-    link: 'https://twitter.quasar.dev'
+    link: '#'
   },
   {
-    title: 'Links de prueba',
+    title: 'Links de prueba 2 ',
     caption: '@QuasarFramework',
     icon: 'public',
-    link: 'https://facebook.quasar.dev'
+    link: '#'
   },
   {
-    title: 'Links de prueba',
+    title: 'Links de prueba 3',
     caption: 'Community Quasar projects',
     icon: 'favorite',
-    link: 'https://awesome.quasar.dev'
+    link: '#'
   }
 ]
 
