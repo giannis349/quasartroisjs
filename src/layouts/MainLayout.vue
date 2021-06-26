@@ -68,40 +68,46 @@ import EssentialLink from 'components/EssentialLink.vue'
 
 const linksList = [
   {
+    title: 'Campus Digital',
+    caption: 'UMSNH',
+    icon: 'home',
+    link: './'
+  },
+  {
     title: 'Plataformas de Educación',
     caption: 'UMSNH',
     icon: 'school',
-    link: '#'
+    link: './teatro-jrr-prueba'
   },
   {
     title: 'Servicios Digitales y de Información',
     caption: 'y de Información',
     icon: 'record_voice_over',
-    link: '#'
+    link: ''
   },
   {
     title: 'Publicaciones digitales',
     caption: 'Revistas, libros y blogs',
     icon: 'poll',
-    link: '#'
+    link: ''
   },
   {
     title: 'Bibliotecas en línea',
     caption: 'Índices y repositorios',
     icon: 'auto_stories',
-    link: '#'
+    link: ''
   },
   {
     title: 'Cultura Digital',
     caption: 'Cultura UMSNH',
     icon: 'interests',
-    link: '#'
+    link: ''
   },
   {
     title: 'ADINI - UMSNH',
     caption: 'Agenda Digital Nicolaita',
     icon: 'public',
-    link: '#'
+    link: ''
   }
 ]
 

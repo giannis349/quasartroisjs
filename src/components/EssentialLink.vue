@@ -4,7 +4,8 @@
     v-ripple
 
     tag="a"
-    :href="link"
+    :to="link"
+    exact
   >
     <q-item-section
       v-if="icon"
