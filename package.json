@@ -13,7 +13,9 @@
     "@quasar/extras": "^1.0.0",
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
-    "quasar": "^2.0.0"
+    "quasar": "^2.0.0",
+    "three": "^0.127.0",
+    "troisjs": "^0.3.2"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.13.14",
