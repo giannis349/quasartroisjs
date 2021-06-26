@@ -4,12 +4,12 @@
     v-ripple
 
     tag="a"
-    target="_blank"
     :href="link"
   >
     <q-item-section
       v-if="icon"
       avatar
+      class="text-blue-6"
     >
       <q-icon :name="icon" />
     </q-item-section>

@@ -50,7 +50,7 @@
     <q-footer reveal class="bg-transparent text-white">
       <q-toolbar>
         <q-avatar>
-          <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg">
+          <img src="~assets/umsnh_escudo_svg_v1.svg">
         </q-avatar>
         <q-text text-overline class="text-white q-px-sm">
           <span>
@@ -68,45 +68,39 @@ import EssentialLink from 'components/EssentialLink.vue'
 
 const linksList = [
   {
-    title: 'Estudios',
-    caption: 'quasar.dev',
+    title: 'Plataformas de Educación',
+    caption: 'UMSNH',
     icon: 'school',
     link: '#'
   },
   {
-    title: 'Infraestructura',
-    caption: 'github.com/quasarframework',
-    icon: 'code',
-    link: '#'
-  },
-  {
-    title: 'Publicaciones',
-    caption: 'chat.quasar.dev',
-    icon: 'chat',
-    link: '#'
-  },
-  {
-    title: 'Desarrollo',
-    caption: 'forum.quasar.dev',
+    title: 'Servicios Digitales y de Información',
+    caption: 'y de Información',
     icon: 'record_voice_over',
     link: '#'
   },
   {
-    title: 'Links de prueba 1 ',
-    caption: '@quasarframework',
-    icon: 'rss_feed',
+    title: 'Publicaciones digitales',
+    caption: 'Revistas, libros y blogs',
+    icon: 'poll',
     link: '#'
   },
   {
-    title: 'Links de prueba 2 ',
-    caption: '@QuasarFramework',
+    title: 'Bibliotecas en línea',
+    caption: 'Índices y repositorios',
+    icon: 'auto_stories',
+    link: '#'
+  },
+  {
+    title: 'Cultura Digital',
+    caption: 'Cultura UMSNH',
+    icon: 'interests',
+    link: '#'
+  },
+  {
+    title: 'ADINI - UMSNH',
+    caption: 'Agenda Digital Nicolaita',
     icon: 'public',
-    link: '#'
-  },
-  {
-    title: 'Links de prueba 3',
-    caption: 'Community Quasar projects',
-    icon: 'favorite',
     link: '#'
   }
 ]
