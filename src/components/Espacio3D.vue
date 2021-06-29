@@ -1,17 +1,19 @@
 <template>
   <Renderer ref="renderer" resize="window" :pointer="{ onMove: updateTilt }"
             :orbit-ctrl="{ enableDamping: true, dampingFactor: 0.05, autoRotate: true, maxPolarAngle: Math.PI / 2,
-            screenSpacePanning: false, minDistance: 100, maxDistance: 1000 }"
+            screenSpacePanning: false, minDistance: 100, maxDistance: 2000 }"
             shadow>
     <Camera :position="{ x: 400, y: 200, z: 0 }"/>
-    <Scene background="#ffffff">
+    <Scene ref="scene" background="#666666" :fog="['#ff0000', 0.9]">
       <AmbientLight />
       <PointLight ref="light" :position="{ y: 0, z: 20 }" />
       <SpotLight color="#ffffff" :intensity="0.5" :position="{ y: 150, z: 0 }" :cast-shadow="true" :shadow-map-size="{ width: 1024, height: 1024 }" />
       <SpotLight color="#4455ee" :intensity="0.5" :position="{ y: -150, z: 0 }" :cast-shadow="true" :shadow-map-size="{ width: 1024, height: 1024 }" />
-      <GltfModel :position="{x: 0, y: 0}" ref="teatro" src="3dmodels/teatro_jrr.gltf" :cast-shadow="true" :receive-shadow="true" />
-      <GltfModel :position="{x: 100, y: 0, z: 100}" src="3dmodels/teatro_jrr.gltf" :cast-shadow="true" :receive-shadow="true">
-      </GltfModel>
+      <GltfModel @load="printe('loadeee')" :position="{x: 0, y: 0}" ref="teatro" src="3dmodels/teatro_jrr.gltf" :cast-shadow="true" :receive-shadow="true" />
+      <GltfModel :materialParams="{color: '#ffff00'}" :position="{x: 600, y: 0, z: 600}" src="3dmodels/teatro_jrr.gltf" :cast-shadow="true" :receive-shadow="true"></GltfModel>
+      <GltfModel :materialParams="{color: '#ffff00'}" :position="{x: 700, y: 0, z: 500}" src="3dmodels/teatro_jrr.gltf" :cast-shadow="true" :receive-shadow="true"></GltfModel>
+      <GltfModel :materialParams="{color: '#ffff00'}" :position="{x: 900, y: 0, z: 400}" src="3dmodels/teatro_jrr.gltf" :cast-shadow="true" :receive-shadow="true"></GltfModel>
+      <GltfModel :materialParams="{color: '#ffff00'}" :position="{x: 300, y: 0, z: 100}" src="3dmodels/teatro_jrr.gltf" :cast-shadow="true" :receive-shadow="true"></GltfModel>
     </Scene>
     <EffectComposer>
       <RenderPass/>
@@ -25,6 +27,9 @@
 <script>
 import { Object3D, MathUtils } from 'three'
 import {
+  Plane,
+  CylinderGeometry,
+  StandardMaterial,
   Camera,
   AmbientLight,
   GltfModel,
@@ -41,6 +46,9 @@ import {
 export default {
   name: 'Espacio3D',
   components: {
+    Plane,
+    CylinderGeometry,
+    StandardMaterial,
     Camera,
     GltfModel,
     AmbientLight,
@@ -65,13 +73,13 @@ export default {
     }
   },
   methods: {
-    print (val) {
+    printe (val) {
       console.log(val)
     },
-    updateTilt({ positionN }) {
-      this.tiltRadius = this.size.height / 3;
-      this.tiltY = (positionN.y + 1) * 0.5 * this.size.height;
-    },
+    updateTilt ({ positionN }) {
+      this.tiltRadius = this.size.height / 3
+      this.tiltY = (positionN.y + 1) * 0.5 * this.size.height
+    }
   },
   mounted () {
     // init instanced mesh matrix
@@ -79,7 +87,9 @@ export default {
     this.renderer = this.$refs.renderer
     this.size = this.renderer.three.size
     this.teatro = this.$refs.teatro
+    this.scene = this.$refs.scene
     console.log(this.teatro)
+    console.log(this.scene)
     const dummy = new Object3D()
     const { randFloat: rnd, randFloatSpread: rndFS } = MathUtils
     for (let i = 0; i < this.NUM_INSTANCES; i++) {
