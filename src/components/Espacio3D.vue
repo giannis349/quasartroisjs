@@ -5,13 +5,12 @@
             shadow>
     <Camera :position="{ x: 400, y: 200, z: 0 }"/>
     <Scene background="#ffffff">
-      <AmbientLight></AmbientLight>
-      <DirectionalLight :position="{ x: 0, y: 0, z: 50 }"></DirectionalLight>
+      <AmbientLight />
+      <PointLight ref="light" :position="{ y: 0, z: 20 }" />
       <SpotLight color="#ffffff" :intensity="0.5" :position="{ y: 150, z: 0 }" :cast-shadow="true" :shadow-map-size="{ width: 1024, height: 1024 }" />
       <SpotLight color="#4455ee" :intensity="0.5" :position="{ y: -150, z: 0 }" :cast-shadow="true" :shadow-map-size="{ width: 1024, height: 1024 }" />
-      <GltfModel :onClick="print('a')" :position="{x: 0, y: 0}" ref="imesh" src="3dmodels/teatro_jrr.gltf" :cast-shadow="true" :receive-shadow="true" />
+      <GltfModel :position="{x: 0, y: 0}" ref="teatro" src="3dmodels/teatro_jrr.gltf" :cast-shadow="true" :receive-shadow="true" />
       <GltfModel :position="{x: 100, y: 0, z: 100}" src="3dmodels/teatro_jrr.gltf" :cast-shadow="true" :receive-shadow="true">
-      <LambertMaterial ></LambertMaterial>
       </GltfModel>
     </Scene>
     <EffectComposer>
@@ -28,7 +27,6 @@ import { Object3D, MathUtils } from 'three'
 import {
   Camera,
   AmbientLight,
-  DirectionalLight,
   GltfModel,
   EffectComposer,
   Renderer,
@@ -36,7 +34,6 @@ import {
   SpotLight,
   Scene,
   UnrealBloomPass,
-  LambertMaterial,
   FXAAPass,
   TiltShiftPass
 } from 'troisjs'
@@ -47,14 +44,12 @@ export default {
     Camera,
     GltfModel,
     AmbientLight,
-    DirectionalLight,
     EffectComposer,
     Renderer,
     RenderPass,
     SpotLight,
     Scene,
     UnrealBloomPass,
-    LambertMaterial,
     FXAAPass,
     TiltShiftPass
   },
@@ -83,6 +78,8 @@ export default {
     // const imesh = this.$refs.imesh.mesh
     this.renderer = this.$refs.renderer
     this.size = this.renderer.three.size
+    this.teatro = this.$refs.teatro
+    console.log(this.teatro)
     const dummy = new Object3D()
     const { randFloat: rnd, randFloatSpread: rndFS } = MathUtils
     for (let i = 0; i < this.NUM_INSTANCES; i++) {
