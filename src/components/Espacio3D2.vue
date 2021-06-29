@@ -1,28 +1,25 @@
 <template>
-  <Renderer ref="renderer" resize="window"
-            :orbit-ctrl="{ enableDamping: true, dampingFactor: 0.05, autoRotate : true, maxPolarAngle: Math.PI / 2,
-            screenSpacePanning: false, minDistance: 100, minDistance: 100}"
-            shadow>
-    <Camera :position="{ x: 400, y: 200, z: 0 }"/>
+
+  <Renderer ref="renderer" resize="window" :orbit-ctrl="{ enableDamping: true, dampingFactor: 0.05, autoRotate : true }" shadow>
+    <Camera :position="{ y: 100, z: 100 }" />
     <Scene>
-      <SpotLight color="#ffffff" :intensity="0.5" :position="{ y: 150, z: 0 }" :cast-shadow="true"
-                 :shadow-map-size="{ width: 1024, height: 1024 }"/>
-      <SpotLight color="#4455ee" :intensity="0.5" :position="{ y: -150, z: 0 }" :cast-shadow="true"
-                 :shadow-map-size="{ width: 1024, height: 1024 }"/>
+      <SpotLight color="#ffffff" :intensity="0.5" :position="{ y: 150, z: 0 }" :cast-shadow="true" :shadow-map-size="{ width: 1024, height: 1024 }" />
+      <SpotLight color="#4455ee" :intensity="0.5" :position="{ y: -150, z: 0 }" :cast-shadow="true" :shadow-map-size="{ width: 1024, height: 1024 }" />
       <InstancedMesh ref="imesh" :count="NUM_INSTANCES" :cast-shadow="true" :receive-shadow="true">
-        <SphereGeometry :radius="5"/>
-        <PhongMaterial/>
+        <SphereGeometry :radius="5" />
+        <PhongMaterial />
       </InstancedMesh>
     </Scene>
     <EffectComposer>
-      <RenderPass/>
-      <UnrealBloomPass :strength="2"/>
+      <RenderPass />
+      <UnrealBloomPass :strength="2" />
     </EffectComposer>
   </Renderer>
+
 </template>
 
 <script>
-import {Object3D, MathUtils} from 'three'
+import { Object3D, MathUtils } from 'three'
 import {
   Camera,
   EffectComposer,
@@ -50,16 +47,16 @@ export default {
     Scene,
     UnrealBloomPass
   },
-  setup() {
+  setup () {
     return {
       NUM_INSTANCES: 250
     }
   },
-  mounted() {
+  mounted () {
     // init instanced mesh matrix
     const imesh = this.$refs.imesh.mesh
     const dummy = new Object3D()
-    const {randFloat: rnd, randFloatSpread: rndFS} = MathUtils
+    const { randFloat: rnd, randFloatSpread: rndFS } = MathUtils
     for (let i = 0; i < this.NUM_INSTANCES; i++) {
       dummy.position.set(rndFS(200), rndFS(200), rndFS(200))
       const scale = rnd(0.2, 1)
