@@ -43,6 +43,8 @@
       </q-scroll-area>
     </q-drawer>
 
+    <Dialog/>
+
     <q-page-container>
       <router-view />
     </q-page-container>
@@ -65,6 +67,7 @@
 
 <script>
 import EssentialLink from 'components/EssentialLink.vue'
+import Dialog from 'components/Dialog.vue'
 
 const linksList = [
   {
@@ -117,7 +120,8 @@ export default defineComponent({
   name: 'MainLayout',
 
   components: {
-    EssentialLink
+    EssentialLink,
+    Dialog
   },
 
   setup () {
