@@ -20,8 +20,6 @@
       show-if-above
 
       :mini="miniState"
-      @mouseover="miniState = false"
-      @mouseout="miniState = true"
 
       :width="300"
       :breakpoint="600"
@@ -42,6 +40,17 @@
         </q-list>
 
       </q-scroll-area>
+
+      <div class="absolute" style="bottom: 15px; left: -17px">
+        <q-btn
+          dense
+          round
+          unelevated
+          color="accent"
+          icon="chevron_left"
+          @click="miniState = true"
+        ></q-btn>
+      </div>
     </q-drawer>
 
     <Dialog/>

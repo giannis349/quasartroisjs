@@ -1,9 +1,5 @@
 <template>
 
-  <q-btn label="Educacion digital" color="primary" @click="dialog = true" style="z-index: 5000;"/>
-  <q-btn label="Publicaciones digitales" color="primary" @click="dialog = true" style="z-index: 5000;"/>
-  <q-btn label="Publicaciones digitales" color="primary" @click="dialog = true" style="z-index: 5000;"/>
-
   <q-dialog
     v-model="dialog"
     persistent
