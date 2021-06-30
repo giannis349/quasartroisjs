@@ -35,6 +35,7 @@
             v-for="link in essentialLinks"
             :key="link.title"
             :obj="link.obj"
+            :title="title"
             v-bind="link"
           />
         </q-list>
@@ -46,9 +47,9 @@
           dense
           round
           unelevated
-          color="accent"
+          color="primary"
           icon="chevron_left"
-          @click="miniState = true"
+          @click="miniState = !miniState"
         ></q-btn>
       </div>
     </q-drawer>
@@ -98,7 +99,8 @@ const linksList = [
     icon: 'record_voice_over',
     link: '',
     obj: {
-      tipo: 'Servicios Digitales y de Información'
+      tipo: 'Servicios Digitales y de Información',
+      title: 'Servicios Digitales y de Información'
     }
   },
   {
@@ -107,16 +109,19 @@ const linksList = [
     icon: 'poll',
     link: '',
     obj: {
-      tipo: 'revistas'
+      tipo: 'Publicaciones digitales y Revistas',
+      title: 'Publicaciones digitales'
     }
   },
   {
-    title: 'Bibliotecas en línea',
+    title: 'Repositorios en línea',
     caption: 'Índices y repositorios',
     icon: 'auto_stories',
     link: '',
     obj: {
-      slides: ['img1', 'img2']
+      tipo: 'Repositorios en línea',
+      title: 'Bibliotecas en línea',
+      slidesNoAun: ['img1', 'img2']
     }
   },
   {
@@ -124,14 +129,20 @@ const linksList = [
     caption: 'Cultura UMSNH',
     icon: 'interests',
     link: '',
-    obj: {}
+    obj: {
+      tipo: 'Cultura Digital',
+      title: 'Cultura Digital'
+    }
   },
   {
     title: 'ADINI - UMSNH',
     caption: 'Agenda Digital Nicolaita',
     icon: 'public',
     link: '',
-    obj: {}
+    obj: {
+      tipo: 'Agenda Digital Nicolaita - ADINI',
+      title: 'ADINI - UMSNH'
+    }
   }
 ]
 
@@ -155,6 +166,26 @@ export default defineComponent({
         rightDrawerOpen.value = !rightDrawerOpen.value
       },
       miniState: ref(true)
+    }
+    //Mini state drawer botón
+    const miniState = ref(false)
+
+    return {
+      drawer: ref(false),
+      miniState,
+
+      drawerClick (e) {
+        // if in "mini" state and user
+        // click on drawer, we switch it to "normal" mode
+        if (miniState.value) {
+          miniState.value = false
+
+          // notice we have registered an event with capture flag;
+          // we need to stop further propagation as this click is
+          // intended for switching drawer to "normal" mode only
+          e.stopPropagation()
+        }
+      }
     }
   }
 })

@@ -8,44 +8,49 @@
   >
     <q-card class="bg-grey-1 text-gray-10">
 
-      <q-card-section style="max-width: 720px; margin: 0 auto;">
+      <q-card-section>
 
         <q-btn flat icon="close" @click="showDialog=false">
           <q-tooltip class="bg-white text-primary">Cerrar</q-tooltip>
         </q-btn>
 
-        <div class="row">
-          <div class="col-xs-auto col-sm-12 col-md-6 col-lg-8">
-            <div class="text-h4 text-weight-bold text-gray-14 q-py-xl">Dyn Revistas digitales y publicaciones</div>
+        <section>
+          <div class="row justify-center">
+            <div class="col-xs-12 col-sm-10 col-md-5 col-lg-4">
+              <div v-if="obj.tipo" class="text-h4 text-weight-bold text-gray-14 q-py-xl">
+                {{ obj.tipo }}
+              </div>
+              <div v-else class="text-h4 text-weight-bold text-gray-14 q-py-xl">
+                Título de Sección
+              </div>
 
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum repellendus sit voluptate voluptas eveniet
-              porro. Rerum blanditiis perferendis totam, ea at omnis vel numquam exercitationem aut, natus minima, porro
-              labore.
-            </p>
-          </div>
-          <div v-if="obj.tipo">
-            <p>{{ obj.tipo }}</p>
-          </div>
-          <div v-if="obj.slides">
-            <div v-for="slide of obj.slides" :key="slide">
-              <p>{{ slide }}</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum repellendus sit voluptate voluptas eveniet porro. Rerum blanditiis perferendis totam, ea at omnis vel numquam exercitationem aut, natus minima, porro labore.
+              </p>
+
+              <q-btn class="bg-primary text-white q-my-lg">Ver publicaciones</q-btn>
+            </div>
+            <div class="col-xs-12 col-sm-10 col-md-5 col-lg-3 offset-lg-1 q-py-xl">
+              <img class="q-img main-images" src="~assets/dialog_img/global_temp_01.jpg" alt="globe">
             </div>
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-            <img class="q-img main-images"
-                 src="https://mux.com/static/masthead-screenshot-3eca6b08f9805ac28da65083039945e3.png" alt="Axios">
+          <div class="row justify-center dot-grid q-my-xl">
+            <div class="col-xs-12 col-sm-10 col-md-4 col-lg-4">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae corporis culpa cum cupiditate dolorem enim eveniet facere ipsum, libero minus obcaecati praesentium reiciendis rerum sapiente tempore. Consequatur in incidunt vero!
+              </p>
+            </div>
+
+            <!-- TODO: implement Slides -->
+            <div class="col-10">
+              <div v-if="obj.slides">
+                <div v-for="slide of obj.slides" :key="slide">
+                  <p>{{ slide }}</p>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-6">
-            <p class="dot-grid">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae corporis culpa cum cupiditate dolorem
-              enim eveniet facere ipsum, libero minus obcaecati praesentium reiciendis rerum sapiente tempore.
-              Consequatur in incidunt vero!
-            </p>
-          </div>
-        </div>
+        </section>
       </q-card-section>
     </q-card>
   </q-dialog>
@@ -82,7 +87,7 @@ export default {
 .main-images {
   border: 1px solid rgb(232, 232, 232);
   border-radius: 5px;
-  box-shadow: rgb(0 0 1.5) 0 10px 80px;
+  box-shadow: #cecece 0 0 20px;
 }
 
 .dot-grid {
