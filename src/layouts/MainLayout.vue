@@ -36,6 +36,7 @@
           <EssentialLink
             v-for="link in essentialLinks"
             :key="link.title"
+            :obj="link.obj"
             v-bind="link"
           />
         </q-list>
@@ -86,31 +87,42 @@ const linksList = [
     title: 'Servicios Digitales y de Información',
     caption: 'y de Información',
     icon: 'record_voice_over',
-    link: ''
+    link: '',
+    obj: {
+      tipo: 'Servicios Digitales y de Información'
+    }
   },
   {
     title: 'Publicaciones digitales',
     caption: 'Revistas, libros y blogs',
     icon: 'poll',
-    link: ''
+    link: '',
+    obj: {
+      tipo: 'revistas'
+    }
   },
   {
     title: 'Bibliotecas en línea',
     caption: 'Índices y repositorios',
     icon: 'auto_stories',
-    link: ''
+    link: '',
+    obj: {
+      slides: ['img1', 'img2']
+    }
   },
   {
     title: 'Cultura Digital',
     caption: 'Cultura UMSNH',
     icon: 'interests',
-    link: ''
+    link: '',
+    obj: {}
   },
   {
     title: 'ADINI - UMSNH',
     caption: 'Agenda Digital Nicolaita',
     icon: 'public',
-    link: ''
+    link: '',
+    obj: {}
   }
 ]
 
