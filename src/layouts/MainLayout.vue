@@ -2,7 +2,7 @@
   <q-layout view="lHr LpR ffr">
     <q-header class="col-auto bg-transparent" style="left: unset;">
       <q-toolbar class="col-auto bg-blue-5">
-        <q-title >Campus Digital UMSNH</q-title>
+        <q-toolbar-title>Campus Digital UMSNH</q-toolbar-title>
         <q-btn
           flat
           dense
@@ -63,13 +63,13 @@
     <q-footer reveal class="bg-transparent text-white">
       <q-toolbar>
         <q-avatar>
-          <img src="~assets/umsnh_escudo_svg_v1.svg">
+          <img src="~assets/umsnh_escudo_svg_v1.svg" alt="Escudo UMSNH">
         </q-avatar>
-        <q-text text-overline class="text-white q-px-sm">
+        <p  class="text-overline text-white q-px-sm">
           <span>
             Universidad Michoacana de San nicolas de Hidalgo
           </span>
-        </q-text>
+        </p>
       </q-toolbar>
     </q-footer>
 
@@ -91,10 +91,13 @@ const linksList = [
     title: 'Plataformas de Educación',
     caption: 'UMSNH',
     icon: 'school',
-    link: './teatro-jrr-prueba'
+    link: '',
+    obj: {
+      tipo: 'Plataformas de Educación'
+    }
   },
   {
-    title: 'Servicios Digitales y de Información',
+    title: 'Servicios Digitales',
     caption: 'y de Información',
     icon: 'record_voice_over',
     link: '',
@@ -109,8 +112,8 @@ const linksList = [
     icon: 'poll',
     link: '',
     obj: {
-      tipo: 'Publicaciones digitales y Revistas',
-      title: 'Publicaciones digitales'
+      tipo: 'Publicaciones digitales y Revistas digitales',
+      title: 'Publicaciones digitales y Revistas digitales'
     }
   },
   {
@@ -158,6 +161,7 @@ export default defineComponent({
 
   setup () {
     const rightDrawerOpen = ref(false)
+    const miniState = ref(false)
 
     return {
       essentialLinks: linksList,
@@ -165,14 +169,9 @@ export default defineComponent({
       toggleLeftDrawer () {
         rightDrawerOpen.value = !rightDrawerOpen.value
       },
-      miniState: ref(true)
-    }
-    //Mini state drawer botón
-    const miniState = ref(false)
 
-    return {
       drawer: ref(false),
-      miniState,
+      miniState: ref(true),
 
       drawerClick (e) {
         // if in "mini" state and user
