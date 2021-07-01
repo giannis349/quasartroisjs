@@ -2,7 +2,7 @@
   <q-layout view="lHr LpR ffr">
     <q-header class="col-auto bg-transparent" style="left: unset;">
       <q-toolbar class="col-auto bg-blue-5">
-        <q-toolbar-title>Campus Digital UMSNH</q-toolbar-title>
+<!--        <q-toolbar-title>Campus Digital UMSNH</q-toolbar-title>-->
         <q-btn
           flat
           dense

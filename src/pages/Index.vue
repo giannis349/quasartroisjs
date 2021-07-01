@@ -1,99 +1,32 @@
 <template>
   <q-page class="flex flex-center">
-    <div class="main" style="width:100%; height:100vh;">
+    <div class="main fixed-top">
 
-      <h4 class="text-blue-10" style="position: absolute; top: 20%; left:40%;">Campus digital
-        <br>
-        de la Universidad Michoacana de San Nicolás de Hidalgo
-      </h4>
+      <q-card class="fixed-center text-center text-white bg-transparent no-border-radius no-border no-shadow"
+              style="text-shadow: #1D1D1D 0 0 5px;">
+        <q-card-section class="text-weight-bold">
+          <h3>Campus digital</h3>
+          <h5>
+            de la Universidad Michoacana
+            <br>
+            de San Nicolás de Hidalgo
+          </h5>
+        </q-card-section>
+
+        <q-card-section>
+          <p class="text-h6">
+            <strong>La UMSNH más cerca de ti</strong>, En este espacio encontrarás un repositorio
+            <br>
+            de los servicios que la Casa de Hidalgo oferta en formato digital.
+          </p>
+        </q-card-section>
+
+      </q-card>
 
       <Espacio3D/>
 
     </div>
-    <div>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-      </p><p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-      </p><p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-      </p><p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-      </p><p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-      </p><p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-      </p><p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-      </p><p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-      </p><p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eum fuga magnam! Autem, consectetur eligendi, facere magnam maxime omnis quae quaerat reiciendis repudiandae, rerum sunt ut? Dolor laborum sit tempora!
-      </p>
-    </div>
+
   </q-page>
 </template>
 
