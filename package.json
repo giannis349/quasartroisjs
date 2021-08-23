@@ -16,11 +16,13 @@
     "core-js": "^3.6.5",
     "quasar": "^2.0.0",
     "three": "^0.127.0",
-    "troisjs": "^0.3.2"
+    "troisjs": "^0.3.2",
+    "vue": "^3.2.4",
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.13.14",
-    "@quasar/app": "^3.0.0",
+    "@quasar/app": "^2.2.10",
+    "@vue/compiler-sfc": "^3.2.4",
     "eslint": "^7.14.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-vue": "^7.0.0",
