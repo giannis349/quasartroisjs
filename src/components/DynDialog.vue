@@ -148,13 +148,20 @@
             </div>
 
             <!-- TODO: implement Slides -->
-            <div class="col-10">
-              <div v-if="obj.slides">
-                <div v-for="slide of obj.slides" :key="slide">
-                  <p>{{ slide }}</p>
-                </div>
+            <div class="col-10" v-if="obj.slides">
+              <div class="q-pa-md">
+                <q-carousel
+                  animated
+                  v-model="slide"
+                  arrows
+                  navigation
+                  infinite
+                >
+                  <q-carousel-slide v-for="slide of obj.slides" :key="slide" :name="1" img-src="{{ slide }}" />
+                </q-carousel>
               </div>
             </div>
+
           </div>
         </section>
       </q-card-section>
@@ -170,7 +177,8 @@ export default {
   props: ['show', 'obj'],
   setup () {
     return {
-      maximizedToggle: ref(true)
+      maximizedToggle: ref(true),
+      slides: ref(1)
     }
   },
   computed: {

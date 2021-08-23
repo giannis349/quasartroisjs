@@ -1,1 +1,19 @@
 // app global css in SCSS form
+
+
+body,
+p,
+h1,
+h2,
+h3{
+  font-family: 'Rubik', sans-serif;
+}
+
+body, p {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+p {
+  color: #555;
+}

@@ -114,7 +114,8 @@ const linksList = [
     link: '',
     obj: {
       tipo: 'publicaciones',
-      title: 'Publicaciones digitales y Revistas digitales'
+      title: 'Publicaciones digitales y Revistas digitales',
+      slides: ['https://cdn.quasar.dev/img/mountains.jpg', 'https://cdn.quasar.dev/img/parallax1.jpg']
     }
   },
   {
