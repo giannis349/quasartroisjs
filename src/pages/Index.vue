@@ -1,15 +1,6 @@
 <template>
   <q-page class="flex flex-center">
-    <vue-splash
-    :show="true"
-    :logo="'https://mehdikhoshnevisz.github.io/vue-splash/img/vue.f4b57650.svg'"
-    title="Your Magnificent App Name"
-    color="#00bfa5"
-    :size="300"
-    :fixed="true"
-  />
     <div class="main fixed-top">
-
       <q-card class="fixed-center text-center text-white bg-transparent no-border-radius no-border no-shadow"
               style="text-shadow: #1D1D1D 0 0 5px;">
         <q-card-section>
@@ -41,9 +32,6 @@
 import { defineComponent } from 'vue'
 import Espacio3D from 'components/Espacio3D.vue'
 import Vue from 'vue';
-import VueSplash from 'vue-splash';
-
-Vue.use(VueSplash);
 
 export default defineComponent({
   name: 'PageIndex',
