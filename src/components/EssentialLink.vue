@@ -11,7 +11,7 @@
       avatar
       class="text-blue-6"
     >
-      <q-icon :name="icon" />
+      <q-icon :name="icon" size="xl" />
     </q-item-section>
 
     <q-item-section>
@@ -33,7 +33,7 @@
       avatar
       class="text-blue-6"
     >
-      <q-icon :name="icon" />
+      <q-icon :name="icon" size="xl" />
     </q-item-section>
 
     <q-item-section>

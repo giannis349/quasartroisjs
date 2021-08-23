@@ -1,6 +1,6 @@
 <template>
   <Renderer ref="renderer" resize="window"
-            :orbit-ctrl="{ enableDamping: true, dampingFactor: 0.005, autoRotate: false, maxPolarAngle: Math.PI / 2.5,
+            :orbit-ctrl="{ enableDamping: true, dampingFactor: 0.0005, autoRotate: true, maxPolarAngle: Math.PI / 2.5,
             screenSpacePanning: false, minDistance: 500, maxDistance: 1500 }"
             shadow
 
