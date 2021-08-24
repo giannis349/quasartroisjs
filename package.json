@@ -16,7 +16,8 @@
     "core-js": "^3.6.5",
     "quasar": "^2.0.0",
     "three": "^0.127.0",
-    "troisjs": "^0.3.2"
+    "troisjs": "^0.3.2",
+    "vue-splash": "^1.2.1"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.13.14",

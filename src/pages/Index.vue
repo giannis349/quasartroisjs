@@ -2,7 +2,8 @@
   <q-page class="flex flex-center">
     <div class="main fixed-top">
 
-      <q-card class="fixed-center text-center text-white bg-transparent no-border-radius no-border no-shadow"
+      <!--
+        <q-card class="fixed-center text-center text-white bg-transparent no-border-radius no-border no-shadow"
               style="text-shadow: #1D1D1D 0 0 5px;">
         <q-card-section class="text-weight-bold">
           <img src="~assets/logopng.png" alt="Escudo UMSNH">
@@ -21,6 +22,7 @@
         </q-card-section>
 
       </q-card>
+      -->
 
       <Espacio3D/>
 
@@ -30,7 +32,7 @@
 </template>
 
 <script>
-import { defineComponent } from 'vue'
+import {defineComponent} from 'vue'
 import Espacio3D from 'components/Espacio3D.vue'
 
 export default defineComponent({

@@ -56,6 +56,15 @@
 
     <Dialog/>
 
+    <vue-splash
+    :show="showSplash"
+    :logo="'https://upload.wikimedia.org/wikipedia/commons/1/14/Logo_de_la_UMSNH.svg'"
+    title="Your Magnificent App Name"
+    color="#00bfa5"
+    :size="300"
+    :fixed="true"
+  />
+
     <q-page-container>
       <router-view />
     </q-page-container>
@@ -73,12 +82,20 @@
 <!--      </q-toolbar>-->
 <!--    </q-footer>-->
 
+
+
   </q-layout>
 </template>
 
 <script>
 import EssentialLink from 'components/EssentialLink.vue'
 import Dialog from 'components/Dialog.vue'
+import { createApp } from 'vue'
+
+import VueSplash from 'vue-splash';
+const app = createApp({})
+app.use(VueSplash)
+
 
 const linksList = [
   {
@@ -158,6 +175,18 @@ export default defineComponent({
   components: {
     EssentialLink,
     Dialog
+  },
+
+  data() {
+    return {
+      showSplash: true
+    }
+  },
+  mounted() {
+    setTimeout(() => {
+      this.showSplash = false
+      console.log("aqui")
+    }, 1800)
   },
 
   setup () {
