@@ -1,7 +1,6 @@
 <template>
   <q-dialog
     v-model="showDialog"
-    persistent
     :maximized="maximizedToggle"
     transition-show="slide-up"
     transition-hide="slide-down"
@@ -10,7 +9,7 @@
 
       <q-card-section>
 
-        <q-btn flat icon="close" @click="showDialog=false">
+        <q-btn flat round small icon="mdi-close" @click="showDialog=false">
           <q-tooltip class="bg-white text-primary">Cerrar</q-tooltip>
         </q-btn>
 
