@@ -1,8 +1,7 @@
-# QCampus Digital (qcampus)
+
 ## Quasar 2. Frontend + Three Js (Troisjs??)
 _____
 
-Frontend de Campus Digital en Quasar v2 Vuejs v3
 
 ## Install the dependencies
 ```bash
