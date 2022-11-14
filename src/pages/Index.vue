@@ -1,7 +1,7 @@
 <template>
   <q-page class="flex flex-center">
     <div class="main fixed-top">
-      <q-card class="fixed-center text-center text-white bg-transparent no-border-radius no-border no-shadow"
+      <!-- <q-card class="fixed-center text-center text-white bg-transparent no-border-radius no-border no-shadow"
               style="text-shadow: #1D1D1D 0 0 5px;">
         <q-card-section>
           <img src="~assets/logopng.png" alt="Escudo UMSNH">
@@ -19,7 +19,7 @@
           </p>
         </q-card-section>
 
-      </q-card>
+      </q-card> -->
 
       <Espacio3D/>
 

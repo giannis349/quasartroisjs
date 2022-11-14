@@ -1,6 +1,6 @@
 <template>
   <Renderer ref="renderer" resize="window"
-            :orbit-ctrl="{ enableDamping: true, dampingFactor: 0.0005, autoRotate: true, maxPolarAngle: Math.PI / 2.5,
+            :orbit-ctrl="{ enableDamping: true, dampingFactor: 0.0005, autoRotate: false, maxPolarAngle: Math.PI / 2.5,
             screenSpacePanning: false, minDistance: 500, maxDistance: 1500 }"
             shadow
 
@@ -31,13 +31,13 @@
 <!--      <SpotLight color="#ffffff" :intensity="0.0" :position="{ y: 150, z: -220 }" :cast-shadow="true" :shadow-map-size="{ width: 1024, height: 1024 }" />-->
 <!--      <SpotLight color="#fbfbfb" :intensity="0.0" :position="{ y: -150, z: -250 }" :cast-shadow="true" :shadow-map-size="{ width: 1024, height: 1024 }" />-->
 
-      <GltfModel :position="{x: -350, z: 50}" src="3dmodels/teatroJRR_f_mat_2x.gltf" @click="onClickModel" ref="teatro" cast-shadow :receive-shadow="true">
+      <!-- <GltfModel :position="{x: -350, z: 50}" src="3dmodels/teatroJRR_f_mat_2x.gltf" @click="onClickModel" ref="teatro" cast-shadow :receive-shadow="true">
         <MatcapMaterial vertex-colors :color="changeMaterial" :props="{ transparent: true, opacity: 0.5 }" />
-      </GltfModel>
+      </GltfModel> -->
       <GltfModel :position="{x: 0, z: 0}" src="3dmodels/edificio_cu_2x.gltf" @click="onClickModel" ref="teatro" :rotation="{x: 0, y:-3.14, z:0}" cast-shadow :receive-shadow="true">
         <MatcapMaterial :color="changeMaterial" :props="{ transparent: true, opacity: 0.5 }" />
       </GltfModel>
-      <GltfModel :position="{x: -250, z:  400}" src="3dmodels/teatroJRR_f_mat_2x.gltf" @click="onClickModel" ref="teatro" :rotation="{x: 0, y:-1.57, z:0}" cast-shadow :receive-shadow="true">
+      <!-- <GltfModel :position="{x: -250, z:  400}" src="3dmodels/teatroJRR_f_mat_2x.gltf" @click="onClickModel" ref="teatro" :rotation="{x: 0, y:-1.57, z:0}" cast-shadow :receive-shadow="true">
         <MatcapMaterial :color="changeMaterial" :props="{ transparent: true, opacity: 0.5 }" />
       </GltfModel>
       <GltfModel :position="{x: -850, z:  -650}" src="3dmodels/teatroJRR_f_mat_2x.gltf" @click="onClickModel" ref="teatro" :rotation="{x: 0, y:-3.14, z:0}" cast-shadow :receive-shadow="true">
@@ -51,19 +51,19 @@
       </GltfModel>
       <GltfModel :position="{x: -400, z: -850}" src="3dmodels/edificio_cu_2x.gltf" @click="onClickModel" ref="edificioCu" :rotation="{x: 0, y:-1.57, z:0}" cast-shadow :receive-shadow="true">
         <MatcapMaterial :color="0xffffff"/>
-      </GltfModel>
+      </GltfModel> -->
 
-      <GltfModel :position="{x: 450, z: -450}" src="3dmodels/edificio_cu_2x.gltf" @click="onClickModel" ref="teatro" :rotation="{x: 0, y:-1.57, z:0}" cast-shadow :receive-shadow="true">
+      <!-- <GltfModel :position="{x: 450, z: -450}" src="3dmodels/edificio_cu_2x.gltf" @click="onClickModel" ref="teatro" :rotation="{x: 0, y:-1.57, z:0}" cast-shadow :receive-shadow="true">
         <MatcapMaterial :color="changeMaterial" :props="{ transparent: true, opacity: 0.5 }" />
       </GltfModel>
 
       <GltfModel :position="{x: 400, z: 250}" src="3dmodels/edificio_cu_2x.gltf" @click="onClickModel" ref="edificioCu" :rotation="{x: 0, y:-1.57, z:0}" cast-shadow :receive-shadow="true">
         <MatcapMaterial :color="changeMaterial" :props="{ transparent: true, opacity: 0.5 }" />
-      </GltfModel>
+      </GltfModel> -->
 
-      <BoxGeometry :size="{x:550, y:550, z: 550}" :position="{x:0, y:0, z: 150}">
+      <!-- <BoxGeometry :size="{x:550, y:550, z: 550}" :position="{x:0, y:0, z: 150}">
         <PhongMaterial vertex-colors />
-      </BoxGeometry>
+      </BoxGeometry> -->
 
 
       <Plane :width="4000" :height="4000" :rotation="{x:-1.59, y:0, z:0}" :position="{ z: -10 - SIZE }" :receive-shadow="true">
